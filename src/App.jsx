@@ -47,7 +47,7 @@ export default function App() {
           <h1>Next-generation automation for modern business operations.</h1>
 
           <p className="heroText">
-            DJC Solutions Ltd. develops automation technologies designed to
+            DJC Solutions develops automation technologies designed to
             improve operational efficiency, system reliability, and real-time
             visibility across all industries.
           </p>
