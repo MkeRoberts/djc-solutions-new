@@ -29,7 +29,7 @@ export default function App() {
     <main className="site">
       <nav className="nav">
         <a href="#top" className="brand">
-          <img src={djcLogo} alt="DJC Solutions Ltd." className="navLogo" />
+          <img src={djcLogo} alt="DJC Solutions" className="navLogo" />
         </a>
       </nav>
 
@@ -40,7 +40,7 @@ export default function App() {
           transition={{ duration: 0.9 }}
           className="heroInner"
         >
-          <img src={djcLogo} alt="DJC Solutions Ltd." className="heroLogo" />
+          <img src={djcLogo} alt="DJC Solutions" className="heroLogo" />
 
           <p className="eyebrow">SYSTEM · AUTOMATION · INTELLIGENCE</p>
 
@@ -149,7 +149,7 @@ export default function App() {
 
       <section id="mission" className="mission">
         <div className="missionLogoWrap">
-          <img src={djcLogo} alt="DJC Solutions Ltd." className="missionLogo" />
+          <img src={djcLogo} alt="DJC Solutions" className="missionLogo" />
         </div>
 
         <p className="sectionLabel">Our Mission</p>
@@ -180,7 +180,7 @@ export default function App() {
               operational performance in real time.
             </p>
 
-            <span className="visitLink">Visit CoreOpsPro →</span>
+            <span className="visitLink">Visit CoreOps Pro →</span>
           </div>
         </section>
       </a>
@@ -230,9 +230,9 @@ export default function App() {
 
       <footer>
         <div className="footerBrand">
-          <img src={djcLogo} alt="DJC Solutions Ltd." />
+          <img src={djcLogo} alt="DJC Solutions" />
 
-          <p>DJC Solutions Ltd.</p>
+          <p>DJC Solutions</p>
         </div>
 
         <p>Automation · Dashboards · Websites · AI Integration</p>
