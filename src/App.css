@@ -196,11 +196,13 @@ p {
 }
 
 .serviceBullet {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #005f99;
-  margin: 0 auto 20px;
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 24px;
+  background-image: url("./assets/djclogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .serviceCard h3 {
@@ -262,8 +264,8 @@ p {
 }
 
 .missionLogo {
-  width: 180px;
-  max-width: 70%;
+  width: 260px;
+  max-width: 80%;
   filter: drop-shadow(0 10px 25px rgba(0,0,0,0.15));
 }
 
@@ -383,8 +385,11 @@ footer p {
   }
 
   .heroLogo {
-    width: 150px;
-  }
+  width: 320px;
+  max-width: 85%;
+  margin-bottom: 36px;
+  filter: drop-shadow(0 12px 30px rgba(0,0,0,0.18));
+}
 
   .brandText {
     font-size: 18px;
