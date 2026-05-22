@@ -205,13 +205,17 @@ p {
 }
 
 .brandSection {
-  padding: 0;
+  padding: 40px 20px;
   background: #020812;
+  display: flex;
+  justify-content: center;
 }
 
 .brandImage {
   width: 100%;
+  height: auto;
   display: block;
+  object-fit: contain;
 }
 
 .value {
