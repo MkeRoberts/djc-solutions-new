@@ -34,6 +34,13 @@ body {
 }
 
 .brand {
+  .brandText {
+  margin-left: 14px;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #0d1b2a;
+}
   display: flex;
   align-items: center;
   text-decoration: none;

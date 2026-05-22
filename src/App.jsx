@@ -28,9 +28,11 @@ export default function App() {
   return (
     <main className="site">
       <nav className="nav">
-        <a href="#top" className="brand">
-          <img src={djcLogo} alt="DJC Solutions" className="navLogo" />
-        </a>
+<a href="#top" className="brand">
+  <img src={djcLogo} alt="DJC Solutions Ltd." className="navLogo" />
+
+  <span className="brandText">DJC Solutions</span>
+</a>
       </nav>
 
       <section id="top" className="hero">
