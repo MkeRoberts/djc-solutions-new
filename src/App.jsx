@@ -7,22 +7,18 @@ import djcCoreOps from "./assets/djcsolutionscoreop.jpg";
 
 const services = [
   {
-    number: "01",
     title: "Personalized Automation Systems",
     text: "Custom automation technologies designed for industrial, commercial, and business applications — improving productivity, monitoring, and operational control.",
   },
   {
-    number: "02",
     title: "Personalized Business Dashboards",
     text: "Real-time operational dashboards built for your industry, providing actionable insights, data visualization, reporting, and performance tracking.",
   },
   {
-    number: "03",
     title: "Personalized Websites",
     text: "Modern, responsive, and scalable websites customized for businesses across all sectors, designed to enhance digital presence and customer engagement.",
   },
   {
-    number: "04",
     title: "AI Integration Solutions",
     text: "Advanced AI integration for automation systems and dashboards, enabling smarter decision-making, predictive monitoring, and intelligent workflow optimization.",
   },
@@ -35,13 +31,6 @@ export default function App() {
         <a href="#top" className="brand">
           <img src={djcLogo} alt="DJC Solutions Ltd." className="navLogo" />
         </a>
-
-        <div className="navLinks">
-          <a href="#method">Method</a>
-          <a href="#services">Services</a>
-          <a href="#mission">Mission</a>
-          <a href="#contact">Contact</a>
-        </div>
       </nav>
 
       <section id="top" className="hero">
@@ -67,6 +56,7 @@ export default function App() {
             <a href="#contact" className="button primary">
               Start a Project
             </a>
+
             <a href="#services" className="button secondary">
               View Services
             </a>
@@ -77,6 +67,7 @@ export default function App() {
       <section id="method" className="split">
         <div>
           <p className="sectionLabel">Method</p>
+
           <h2>Customized technology systems built around each client.</h2>
         </div>
 
@@ -97,21 +88,24 @@ export default function App() {
 
       <section id="services" className="services">
         <p className="sectionLabel">Our Services</p>
+
         <h2>Digital infrastructure for operational clarity.</h2>
 
         <div className="serviceGrid">
           {services.map((service) => (
             <motion.article
-              key={service.number}
+              key={service.title}
               className="serviceCard"
               initial={{ opacity: 0, y: 35 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.55 }}
             >
-              <span>{service.number}</span>
+              <div className="serviceBullet"></div>
+
               <div>
                 <h3>{service.title}</h3>
+
                 <p>{service.text}</p>
               </div>
             </motion.article>
@@ -129,21 +123,25 @@ export default function App() {
 
       <section className="value">
         <p className="sectionLabel">Value</p>
+
         <h2>Efficiency, visibility, reliability, and smarter decisions.</h2>
 
         <div className="valueGrid">
           <div>
             <h3>Operational Efficiency</h3>
+
             <p>Reduce manual work, repetitive tasks, and process delays.</p>
           </div>
 
           <div>
             <h3>Real-Time Visibility</h3>
+
             <p>Track performance, reporting, and operations from one place.</p>
           </div>
 
           <div>
             <h3>AI-Driven Growth</h3>
+
             <p>Use intelligent systems to support better decisions at scale.</p>
           </div>
         </div>
@@ -174,6 +172,7 @@ export default function App() {
 
           <div>
             <p className="sectionLabel">Partner Platform</p>
+
             <h2>CoreOpsPro</h2>
 
             <p>
@@ -189,20 +188,50 @@ export default function App() {
       <section id="contact" className="contact">
         <div>
           <p className="sectionLabel">Contact</p>
+
           <h2>Build a smarter system for your business.</h2>
         </div>
 
-        <form>
-          <input placeholder="Name" />
-          <input placeholder="Email" />
-          <textarea placeholder="Tell us about your project" rows="5" />
-          <button type="button">Send Message</button>
+        <form
+          action="https://formsubmit.co/admin@djcsolutions.ca"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="New DJC Solutions Website Message"
+          />
+
+          <input type="hidden" name="_captcha" value="false" />
+
+          <input
+            name="name"
+            placeholder="Name"
+            required
+          />
+
+          <input
+            name="email"
+            type="email"
+            placeholder="Email"
+            required
+          />
+
+          <textarea
+            name="message"
+            placeholder="Tell us about your project"
+            rows="5"
+            required
+          />
+
+          <button type="submit">Send Message</button>
         </form>
       </section>
 
       <footer>
         <div className="footerBrand">
           <img src={djcLogo} alt="DJC Solutions Ltd." />
+
           <p>DJC Solutions Ltd.</p>
         </div>
 
