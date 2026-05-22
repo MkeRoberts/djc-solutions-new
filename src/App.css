@@ -1,0 +1,355 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f4f0e8;
+  color: #111;
+}
+
+.site {
+  overflow-x: hidden;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(244, 240, 232, 0.86);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navLogo {
+  height: 46px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 24px;
+}
+
+.navLinks a,
+.button,
+.coreopsLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 160px 40px 80px;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(0, 92, 180, 0.24), transparent 36%),
+    linear-gradient(135deg, #f4f0e8, #ded7ca);
+}
+
+.heroInner {
+  max-width: 1120px;
+}
+
+.heroLogo {
+  width: 220px;
+  border-radius: 24px;
+  margin-bottom: 44px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+.hero h1 {
+  max-width: 1100px;
+  font-size: clamp(56px, 10vw, 140px);
+  line-height: 0.9;
+  letter-spacing: -0.08em;
+  margin: 0;
+}
+
+.eyebrow,
+.sectionLabel {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 13px;
+  font-weight: 800;
+  color: #245d8f;
+}
+
+.heroText {
+  max-width: 650px;
+  font-size: 21px;
+  line-height: 1.5;
+  margin-top: 32px;
+}
+
+.heroActions {
+  display: flex;
+  gap: 14px;
+  margin-top: 36px;
+}
+
+.button,
+form button {
+  padding: 15px 22px;
+  border-radius: 999px;
+  border: 1px solid #111;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.primary,
+form button {
+  background: #111;
+  color: #fff;
+}
+
+.secondary {
+  background: transparent;
+}
+
+.split,
+.services,
+.value,
+.mission,
+.contact {
+  padding: 110px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.split,
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+
+h2 {
+  font-size: clamp(36px, 6vw, 78px);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+  margin: 12px 0 0;
+}
+
+.split p,
+.serviceCard p,
+.value p,
+.contact p,
+.mission h2,
+.coreopsSection p {
+  line-height: 1.55;
+}
+
+.serviceGrid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #111;
+  border-left: 1px solid #111;
+}
+
+.serviceCard {
+  min-height: 390px;
+  padding: 28px;
+  border-right: 1px solid #111;
+  border-bottom: 1px solid #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.serviceCard span {
+  font-size: 42px;
+  font-weight: 900;
+  color: #245d8f;
+}
+
+.serviceCard h3 {
+  font-size: 27px;
+  letter-spacing: -0.04em;
+}
+
+.brandSection {
+  padding: 0;
+  background: #020812;
+}
+
+.brandImage {
+  width: 100%;
+  display: block;
+}
+
+.value {
+  background: #111;
+  color: #f4f0e8;
+}
+
+.value .sectionLabel {
+  color: #61b4ff;
+}
+
+.valueGrid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.valueGrid div {
+  background: #111;
+  padding: 34px;
+}
+
+.mission {
+  position: relative;
+  background: #d8efe6;
+  overflow: hidden;
+}
+
+.missionLogoWrap {
+  margin-bottom: 36px;
+}
+
+.missionLogo {
+  width: 170px;
+  border-radius: 22px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+.coreopsSection {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 60px;
+  align-items: center;
+  padding: 110px 40px;
+  background: #08111f;
+  color: white;
+  transition: 0.35s ease;
+}
+
+.coreopsSection:hover {
+  background: #0c1830;
+}
+
+.coreopsSection .sectionLabel {
+  color: #61b4ff;
+}
+
+.coreopsLogo {
+  width: 100%;
+  border-radius: 28px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.visitLink {
+  display: inline-block;
+  margin-top: 24px;
+  color: #61b4ff;
+  font-weight: 700;
+}
+
+.contact form {
+  display: grid;
+  gap: 14px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #111;
+  background: transparent;
+  font: inherit;
+}
+
+footer {
+  padding: 36px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #f4f0e8;
+  gap: 20px;
+}
+
+.footerBrand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 800;
+}
+
+.footerBrand img {
+  height: 42px;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    padding: 16px 20px;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .navLogo {
+    height: 38px;
+  }
+
+  .hero,
+  .split,
+  .services,
+  .value,
+  .mission,
+  .contact,
+  .coreopsSection {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .heroLogo {
+    width: 150px;
+  }
+
+  .split,
+  .contact,
+  .serviceGrid,
+  .valueGrid,
+  .coreopsSection {
+    grid-template-columns: 1fr;
+  }
+
+  .coreopsSection {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .coreopsLogo {
+    max-width: 260px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
