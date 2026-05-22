@@ -30,17 +30,10 @@ body {
   align-items: center;
   background: rgba(244, 240, 232, 0.92);
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .brand {
-  .brandText {
-  margin-left: 14px;
-  font-size: 20px;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  color: #0d1b2a;
-}
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -49,11 +42,14 @@ body {
 .navLogo {
   height: 48px;
   width: auto;
-  border-radius: 10px;
 }
 
-.navLinks {
-  display: none;
+.brandText {
+  margin-left: 14px;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #0d1b2a;
 }
 
 .hero {
@@ -71,11 +67,10 @@ body {
 }
 
 .heroLogo {
-  width: 190px;
-  max-width: 70%;
-  border-radius: 24px;
+  width: 220px;
+  max-width: 75%;
   margin-bottom: 36px;
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.18);
+  filter: drop-shadow(0 12px 30px rgba(0,0,0,0.18));
 }
 
 .hero h1 {
@@ -200,10 +195,12 @@ p {
   text-align: center;
 }
 
-.serviceCard span {
-  font-size: 42px;
-  font-weight: 900;
-  color: #005f99;
+.serviceBullet {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #005f99;
+  margin: 0 auto 20px;
 }
 
 .serviceCard h3 {
@@ -265,10 +262,9 @@ p {
 }
 
 .missionLogo {
-  width: 160px;
-  max-width: 60%;
-  border-radius: 22px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);
+  width: 180px;
+  max-width: 70%;
+  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.15));
 }
 
 .mission h2 {
@@ -361,8 +357,8 @@ footer p {
 }
 
 .footerBrand img {
-  height: 42px;
-  border-radius: 10px;
+  height: 48px;
+  width: auto;
 }
 
 @media (max-width: 1050px) {
@@ -387,7 +383,11 @@ footer p {
   }
 
   .heroLogo {
-    width: 135px;
+    width: 150px;
+  }
+
+  .brandText {
+    font-size: 18px;
   }
 
   .heroActions {
