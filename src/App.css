@@ -24,12 +24,12 @@ body {
   top: 0;
   width: 100%;
   z-index: 10;
-  padding: 16px 32px;
+  padding: 18px 36px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(244, 240, 232, 0.92);
-  backdrop-filter: blur(14px);
+  background: rgba(244, 240, 232, 0.95);
+  backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
@@ -40,21 +40,21 @@ body {
 }
 
 .navLogo {
-  height: 48px;
+  height: 64px;
   width: auto;
 }
 
 .brandText {
-  margin-left: 14px;
-  font-size: 20px;
-  font-weight: 800;
+  margin-left: 16px;
+  font-size: 28px;
+  font-weight: 900;
   letter-spacing: -0.03em;
   color: #0d1b2a;
 }
 
 .hero {
   min-height: 100vh;
-  padding: 150px 24px 80px;
+  padding: 170px 24px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,57 +62,58 @@ body {
 }
 
 .heroInner {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .heroLogo {
-  width: 640px;
-  max-width: 95%;
-  margin-bottom: 36px;
-  filter: drop-shadow(0 12px 30px rgba(0,0,0,0.18));
+  width: 900px;
+  max-width: 98%;
+  margin-bottom: 50px;
+  filter: drop-shadow(0 18px 40px rgba(0,0,0,0.22));
 }
 
 .hero h1 {
   color: #0d1b2a;
-  font-size: clamp(42px, 8vw, 105px);
+  font-size: clamp(52px, 9vw, 120px);
   line-height: 0.95;
   letter-spacing: -0.06em;
   margin: 0 auto;
-  max-width: 1050px;
+  max-width: 1200px;
 }
 
 .eyebrow,
 .sectionLabel {
   text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 13px;
-  font-weight: 800;
+  letter-spacing: 0.18em;
+  font-size: 15px;
+  font-weight: 900;
   color: #005f99;
 }
 
 .heroText {
   color: #263238;
-  max-width: 720px;
-  font-size: clamp(17px, 2.2vw, 22px);
-  line-height: 1.6;
-  margin: 32px auto 0;
+  max-width: 900px;
+  font-size: clamp(20px, 2.5vw, 28px);
+  line-height: 1.7;
+  margin: 40px auto 0;
 }
 
 .heroActions {
   display: flex;
   justify-content: center;
-  gap: 14px;
-  margin-top: 36px;
+  gap: 18px;
+  margin-top: 44px;
   flex-wrap: wrap;
 }
 
 .button,
 form button {
-  padding: 15px 24px;
+  padding: 18px 32px;
   border-radius: 999px;
   border: 1px solid #111;
-  font-weight: 800;
+  font-weight: 900;
+  font-size: 16px;
   cursor: pointer;
   text-decoration: none;
 }
@@ -133,7 +134,7 @@ form button {
 .value,
 .mission,
 .contact {
-  padding: 95px 24px;
+  padding: 120px 32px;
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
@@ -141,24 +142,24 @@ form button {
 .contact {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 36px;
+  gap: 40px;
   justify-items: center;
 }
 
 .split > div,
 .contact > div,
 .contact form {
-  max-width: 760px;
+  max-width: 900px;
   width: 100%;
 }
 
 h2 {
   color: #0d1b2a;
-  font-size: clamp(34px, 6vw, 72px);
+  font-size: clamp(44px, 7vw, 86px);
   line-height: 1;
   letter-spacing: -0.05em;
-  margin: 12px auto 0;
-  max-width: 1000px;
+  margin: 14px auto 0;
+  max-width: 1200px;
 }
 
 p {
@@ -171,21 +172,22 @@ p {
 .contact p,
 .mission h2,
 .coreopsSection p {
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 18px;
 }
 
 .serviceGrid {
-  margin: 60px auto 0;
+  margin: 80px auto 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  max-width: 1400px;
+  max-width: 1600px;
   border-top: 1px solid #111;
   border-left: 1px solid #111;
 }
 
 .serviceCard {
-  min-height: 420px;
-  padding: 36px;
+  min-height: 620px;
+  padding: 50px;
   border-right: 1px solid #111;
   border-bottom: 1px solid #111;
   display: flex;
@@ -196,9 +198,9 @@ p {
 }
 
 .serviceBullet {
-  width: 156px;
-  height: 156px;
-  margin: 0 auto 28px;
+  width: 240px;
+  height: 240px;
+  margin: 0 auto 40px;
   background-image: url("./assets/djclogo.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -207,27 +209,25 @@ p {
 
 .serviceCard h3 {
   color: #0d1b2a;
-  font-size: 28px;
+  font-size: 34px;
   letter-spacing: -0.03em;
 }
 
 .brandSection {
-  padding: 40px 16px;
+  padding: 60px 20px;
   background: #020812;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: visible;
 }
 
 .brandImage {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1600px;
   height: auto;
   display: block;
   object-fit: contain;
-  object-position: center;
-  border-radius: 18px;
+  border-radius: 22px;
 }
 
 .value {
@@ -246,17 +246,17 @@ p {
 }
 
 .valueGrid {
-  margin: 50px auto 0;
+  margin: 60px auto 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
-  max-width: 1200px;
+  max-width: 1400px;
   background: rgba(255, 255, 255, 0.25);
 }
 
 .valueGrid div {
   background: #08111f;
-  padding: 40px;
+  padding: 50px;
 }
 
 .mission {
@@ -264,9 +264,9 @@ p {
 }
 
 .missionLogo {
-  width: 520px;
-  max-width: 95%;
-  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.15));
+  width: 760px;
+  max-width: 100%;
+  filter: drop-shadow(0 16px 35px rgba(0,0,0,0.18));
 }
 
 .mission h2 {
@@ -275,11 +275,11 @@ p {
 
 .coreopsSection {
   display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 60px;
+  grid-template-columns: 320px 1fr;
+  gap: 70px;
   align-items: center;
   justify-content: center;
-  padding: 95px 24px;
+  padding: 120px 32px;
   background: #08111f;
   color: white;
   transition: 0.35s ease;
@@ -301,7 +301,7 @@ p {
 
 .coreopsLogo {
   width: 100%;
-  max-width: 260px;
+  max-width: 320px;
   border-radius: 28px;
   justify-self: center;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
@@ -309,9 +309,10 @@ p {
 
 .visitLink {
   display: inline-block;
-  margin-top: 24px;
+  margin-top: 28px;
   color: #61b4ff;
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 18px;
 }
 
 .contact {
@@ -320,28 +321,28 @@ p {
 
 .contact form {
   display: grid;
-  gap: 14px;
+  gap: 18px;
 }
 
 input,
 textarea {
   width: 100%;
-  padding: 16px;
+  padding: 18px;
   border: 1px solid #111;
   background: #fff;
   color: #111;
   font: inherit;
-  border-radius: 12px;
+  border-radius: 14px;
 }
 
 footer {
-  padding: 36px 24px;
+  padding: 44px 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #111;
   color: #f4f0e8;
-  gap: 20px;
+  gap: 24px;
   flex-wrap: wrap;
   text-align: center;
 }
@@ -354,12 +355,12 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  font-weight: 800;
+  gap: 16px;
+  font-weight: 900;
 }
 
 .footerBrand img {
-  height: 48px;
+  height: 58px;
   width: auto;
 }
 
@@ -370,26 +371,30 @@ footer p {
 
   .coreopsSection {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 40px;
   }
 }
 
 @media (max-width: 700px) {
   .hero {
-    padding-top: 125px;
+    padding-top: 150px;
   }
 
   .heroLogo {
-    width: 320px;
+    width: 480px;
+    max-width: 100%;
   }
 
   .brandText {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .hero h1 {
-    font-size: 44px;
-    letter-spacing: -0.04em;
+    font-size: 54px;
+  }
+
+  .heroText {
+    font-size: 20px;
   }
 
   .heroActions {
@@ -399,7 +404,7 @@ footer p {
 
   .button {
     width: 100%;
-    max-width: 280px;
+    max-width: 320px;
   }
 
   .serviceGrid,
@@ -409,16 +414,18 @@ footer p {
 
   .serviceCard {
     min-height: auto;
-    gap: 28px;
+    gap: 32px;
+    padding: 40px 28px;
   }
 
   .serviceBullet {
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
   }
 
   .missionLogo {
-    width: 320px;
+    width: 520px;
+    max-width: 100%;
   }
 
   .brandSection {
@@ -439,8 +446,8 @@ footer p {
   .mission,
   .contact,
   .coreopsSection {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   footer {
