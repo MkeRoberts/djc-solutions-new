@@ -211,11 +211,21 @@ p {
   justify-content: center;
 }
 
+.brandSection {
+  padding: 40px 20px;
+  background: #020812;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .brandImage {
   width: 100%;
+  max-width: 1200px;
   height: auto;
   display: block;
   object-fit: contain;
+  border-radius: 18px;
 }
 
 .value {
