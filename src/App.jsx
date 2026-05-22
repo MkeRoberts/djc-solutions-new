@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import "./App.css";
 
 import djcLogo from "./assets/djclogo.png";
-import coreOpsLogo from "./assets/coreopslogo.jpg";
+import coreOpsLogo from "./assets/coreopslogo.png";
 import djcCoreOps from "./assets/djcsolutionscoreop.jpg";
 
 const services = [
