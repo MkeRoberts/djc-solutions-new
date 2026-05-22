@@ -193,7 +193,7 @@ export default function App() {
         </div>
 
         <form
-          action="https://formsubmit.co/admin@djcsolutions.ca"
+          action="https://formsubmit.co/DJCSOLUTIONS@outlook.com"
           method="POST"
         >
           <input
