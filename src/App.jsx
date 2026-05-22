@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import "./App.css";
 
-import djcLogo from "./assets/djclogo.jpg";
+import djcLogo from "./assets/djclogo.png";
 import coreOpsLogo from "./assets/coreopslogo.jpg";
 import djcCoreOps from "./assets/djcsolutionscoreop.jpg";
 
