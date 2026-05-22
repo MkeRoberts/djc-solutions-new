@@ -62,13 +62,13 @@ body {
 }
 
 .heroInner {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .heroLogo {
-  width: 220px;
-  max-width: 75%;
+  width: 640px;
+  max-width: 95%;
   margin-bottom: 36px;
   filter: drop-shadow(0 12px 30px rgba(0,0,0,0.18));
 }
@@ -178,14 +178,14 @@ p {
   margin: 60px auto 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  max-width: 1180px;
+  max-width: 1400px;
   border-top: 1px solid #111;
   border-left: 1px solid #111;
 }
 
 .serviceCard {
-  min-height: 360px;
-  padding: 28px;
+  min-height: 420px;
+  padding: 36px;
   border-right: 1px solid #111;
   border-bottom: 1px solid #111;
   display: flex;
@@ -196,9 +196,9 @@ p {
 }
 
 .serviceBullet {
-  width: 52px;
-  height: 52px;
-  margin: 0 auto 24px;
+  width: 156px;
+  height: 156px;
+  margin: 0 auto 28px;
   background-image: url("./assets/djclogo.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -207,7 +207,7 @@ p {
 
 .serviceCard h3 {
   color: #0d1b2a;
-  font-size: 26px;
+  font-size: 28px;
   letter-spacing: -0.03em;
 }
 
@@ -222,7 +222,7 @@ p {
 
 .brandImage {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   height: auto;
   display: block;
   object-fit: contain;
@@ -250,13 +250,13 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
-  max-width: 1050px;
+  max-width: 1200px;
   background: rgba(255, 255, 255, 0.25);
 }
 
 .valueGrid div {
   background: #08111f;
-  padding: 34px;
+  padding: 40px;
 }
 
 .mission {
@@ -264,8 +264,8 @@ p {
 }
 
 .missionLogo {
-  width: 260px;
-  max-width: 80%;
+  width: 520px;
+  max-width: 95%;
   filter: drop-shadow(0 10px 25px rgba(0,0,0,0.15));
 }
 
@@ -379,20 +379,17 @@ footer p {
     padding-top: 125px;
   }
 
-  .hero h1 {
-    font-size: 44px;
-    letter-spacing: -0.04em;
-  }
-
   .heroLogo {
-  width: 320px;
-  max-width: 85%;
-  margin-bottom: 36px;
-  filter: drop-shadow(0 12px 30px rgba(0,0,0,0.18));
-}
+    width: 320px;
+  }
 
   .brandText {
     font-size: 18px;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+    letter-spacing: -0.04em;
   }
 
   .heroActions {
@@ -413,6 +410,15 @@ footer p {
   .serviceCard {
     min-height: auto;
     gap: 28px;
+  }
+
+  .serviceBullet {
+    width: 100px;
+    height: 100px;
+  }
+
+  .missionLogo {
+    width: 320px;
   }
 
   .brandSection {
